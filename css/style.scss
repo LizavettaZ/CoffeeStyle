@@ -246,7 +246,7 @@ header{
   @extend %style_menu;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: end !important;
   gap: 0 10px;
   position: relative;
   z-index: 3;
@@ -623,6 +623,7 @@ main{
   }
 
   .subscribe_form__button{
+    background-color: $color_white;
     @include adaptive-value(width, 130, 80, 1);
     @include adaptive-value(height, 54, 25, 1);
     box-shadow: 0 2px 6px rgba(29, 31, 46, 0.1);
@@ -800,6 +801,7 @@ footer {
   color: $color_white;
   @include adaptive-value(font-size, 18, 12, 1);
   @include adaptive-value(padding-top, 50, 35, 1);
+  @include adaptive-value(padding-bottom, 30, 15, 1);
 }
 
 //Swiper

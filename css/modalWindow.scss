@@ -132,6 +132,11 @@ $middleWidth: 768px;
           & button{
             display: flex;
             align-items: center;
+            background-color: $color_white;
+
+            & img{
+              min-width: 15px;
+            }
           }
         }
       }
@@ -193,6 +198,7 @@ $middleWidth: 768px;
     }
 
     .order_form_button__button{
+      color: $color_main;
       background-color: $color_white;
       border: 2px solid $color_white;
       font-size: 25px;

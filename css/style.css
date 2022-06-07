@@ -181,6 +181,10 @@ h1, h2, h3, h4, h5, h6 {
 .body__order .order__product .order_counter__info .product_info__price-wrap .order_counter button {
   display: flex;
   align-items: center;
+  background-color: #FFFFFF;
+}
+.body__order .order__product .order_counter__info .product_info__price-wrap .order_counter button img {
+  min-width: 15px;
 }
 
 .order__form {
@@ -229,6 +233,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 25px;
 }
 .order__form .order_form__button .order_form_button__button {
+  color: #1D1F2E;
   background-color: #FFFFFF;
   border: 2px solid #FFFFFF;
   font-size: 25px;
@@ -606,7 +611,7 @@ header:before {
   width: 112px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: end !important;
   gap: 0 10px;
   position: relative;
   z-index: 3;
@@ -1078,6 +1083,7 @@ main {
   color: transparent;
 }
 .subscribe_card .subscribe_form__button {
+  background-color: #FFFFFF;
   width: 130px;
   height: 54px;
   box-shadow: 0 2px 6px rgba(29, 31, 46, 0.1);
@@ -1320,6 +1326,7 @@ footer .footer__copyright {
   color: #FFFFFF;
   font-size: 18px;
   padding-top: 50px;
+  padding-bottom: 30px;
 }
 @media (max-width: 940px) {
   .success_text {
@@ -1329,6 +1336,11 @@ footer .footer__copyright {
 @media (max-width: 940px) {
   .success_text {
     padding-top: calc(35px + 15 * ((100vw - 320px) / 620));
+  }
+}
+@media (max-width: 940px) {
+  .success_text {
+    padding-bottom: calc(15px + 15 * ((100vw - 320px) / 620));
   }
 }
 

@@ -3,6 +3,7 @@ import createElement from "./create-element.js"
 export default class SubscribeValidation {
   constructor(form) {
     this._form = form
+
     this._emailValidation(this._form.email)
   }
 
@@ -32,6 +33,8 @@ export default class SubscribeValidation {
     this._form.addEventListener('submit', (event) => {
       event.preventDefault()
 
+      this.isEmpty()
+
       if (this._form.classList.contains('error_in_form')) return
 
       const formSubscribe = new FormData(event.target)
@@ -46,5 +49,11 @@ export default class SubscribeValidation {
         this._form.email.value = ''
       })
     })
+  }
+
+  isEmpty() {
+    if (this._form.email.value.length > 1) {
+      this._form.classList.remove('error_in_form')
+    }
   }
 }
