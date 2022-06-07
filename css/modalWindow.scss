@@ -1,0 +1,250 @@
+$color_main: #1D1F2E;
+$color_white: #FFFFFF;
+$color_black: 000000;
+$color_accent: #A25F4B;
+$color_bgr_about: #050827;
+$color_line: #ECECED;
+$color_main_70: rgba(29, 31, 46, 0.7);
+$color_main_40: rgba(29, 31, 46, 0.4);
+$color_main_30: rgb(29, 31, 46, 0.3);
+$color_accent_20: rgba(162, 95, 75, 0.2);
+$color_accent_50:rgba(162, 95, 75, 0.5);
+
+$middleWidth: 768px;
+
+.order_form__input{
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #2F303E;
+
+  &:hover{
+    border: 1px solid $color_white;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus{
+    &::placeholder{
+      color: transparent;
+    }
+  }
+}
+
+
+
+.is-modal-open{
+  overflow: hidden;
+}
+.modal {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.9s ease 0s;
+  color: $color_white;
+}
+.modal__overlay {
+  height: 100%;
+  width: 100%;
+  background-color: $color_main_70;
+}
+.modal__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 994px;
+  width: 100%;
+  background-color: $color_main;
+  display: flex;
+  flex-direction: column;
+}
+.modal__header{
+
+
+}
+.modal__close{
+  background-color: transparent;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+}
+.modal__title{
+  margin-bottom: 30px;
+
+  &.title_success{
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.modal__body{
+  margin-bottom: 100px;
+
+}
+.body__order{
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+
+  .order__product{
+    display: flex;
+    align-items: center;
+    background-color: $color_bgr_about;
+    padding-right: 20px;
+
+    .order_product__img{
+      flex: 0 1 100px;
+    }
+
+    .order_counter__info{
+      display: flex;
+      flex: 0 1 100%;
+      align-items: center;
+
+      .product_info__title{
+        flex: 0 1 100%;
+        padding: 0 10px;
+      }
+
+      .product_info__price-wrap{
+        display: flex;
+        flex: 0 0 40%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 20px;
+
+        .order_counter{
+          display: flex;
+          gap: 0 10px;
+          align-items: center;
+
+          & button{
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.order__form{
+  background-color: $color_bgr_about;
+  padding: 30px;
+
+  .order_form__title{
+    margin: 30px auto;
+  }
+
+  .order_form__group{
+    display: flex;
+    flex: 0 1 100%;
+    grid-gap: 10px;
+
+    & input{
+      width: 100%;
+    }
+  }
+
+  .order_form__address{
+    display: flex;
+    flex: 0 1 100%;
+    margin: 10px auto 30px;
+
+    & input{
+      width: 100%;
+    }
+  }
+
+  .order_form__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+
+    .order_form_button__full_price{
+      padding: 10px;
+      display: flex;
+      gap: 5px 0;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid $color_white;
+      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.6);
+
+      .full_price__text{
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      .full_price__price{
+        font-size: 25px;
+      }
+    }
+
+    .order_form_button__button{
+      background-color: $color_white;
+      border: 2px solid $color_white;
+      font-size: 25px;
+      text-transform: uppercase;
+      padding: 16.5px 20px;
+
+      &:hover{
+        color: $color_accent;
+        border: 1px solid $color_white;
+        box-shadow: 0 2px 6px rgba(255, 255, 255, 0.6);
+      }
+
+      &:active{
+        color: $color_white;
+        background-color: $color_main;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media (max-width: $middleWidth) {
+  .modal__body {
+    padding: 0 0 45px;
+    flex-grow: 1;
+  }
+
+  .modal__inner {
+    top: 0;
+    left: 0;
+    gap: 30px 0;
+    padding: 100px 0;
+    transform: none;
+    min-height: 100vh;
+  }
+
+  .modal__title {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .order_form__group{
+    flex-direction: column;
+
+    .order_form__input{
+      width: 100%;
+
+    }
+
+  }
+}

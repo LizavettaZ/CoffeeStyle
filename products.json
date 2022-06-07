@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Red Love Cup",
+    "price": 25,
+    "old_price": 37,
+    "category": "cup",
+    "id": "red love cup",
+    "featured": false
+  },
+  {
+    "name": "Black Tea Cup",
+    "price": 15,
+    "old_price": 29,
+    "category": "cup",
+    "id": "black tea cup",
+    "featured": false
+  },
+  {
+    "name": "B&W Essentials Mug",
+    "price": 19,
+    "category": "mug",
+    "id": "b&w essentials mug",
+    "featured": false
+  },
+  {
+    "name": "Winter Style Mug",
+    "price": 25,
+    "category": "mug",
+    "id": "winter style mug",
+    "featured": false
+  },
+  {
+    "name": "Ceramic Tea",
+    "price": 46,
+    "category": "cup",
+    "id": "ceramic tea",
+    "featured": false
+  },
+  {
+    "name": "No Handle Bar Cup",
+    "price": 34,
+    "category": "cup",
+    "id": "no handle bar cup",
+    "featured": false
+  },
+  {
+    "name": "Espresso Cup by Mugs.co",
+    "price": 25,
+    "category": "mug",
+    "id": "espresso cup by mugs.co",
+    "featured": false
+  },
+  {
+    "name": "Summer Designer Cup",
+    "price": 29,
+    "category": "cup",
+    "id": "summer designer cup",
+    "featured": false
+  },
+  {
+    "name": "Pink Premium Ceramic",
+    "price": 99,
+    "category": "cup",
+    "id": "pink premium ceramic",
+    "featured": true
+  },
+  {
+    "name": "Golden Designers Mug",
+    "price": 50,
+    "old_price": 69,
+    "category": "mug",
+    "id": "golden designers mug",
+    "featured": true
+  },
+  {
+    "name": "B&W Essentials Mug",
+    "price": 19,
+    "category": "mug",
+    "id": "b&w essentials mug",
+    "featured": false
+  },
+  {
+    "name": "Black Cup",
+    "price": 15,
+    "old_price": 29,
+    "category": "cup",
+    "id": "black cup",
+    "featured": false
+  }
+]
