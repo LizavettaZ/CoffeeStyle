@@ -1084,6 +1084,7 @@ main {
 }
 .subscribe_card .subscribe_form__button {
   background-color: #FFFFFF;
+  color: #1D1F2E;
   width: 130px;
   height: 54px;
   box-shadow: 0 2px 6px rgba(29, 31, 46, 0.1);
